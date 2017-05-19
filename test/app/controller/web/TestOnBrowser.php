@@ -24,7 +24,8 @@ class TestOnBrowser extends \PHPUnit_Extensions_Selenium2TestCase
 
     public function testCreateAnAccount()
     {
-        $this->url('http://127.0.0.1/magento2/');
+        $this->url('http://127.0.0.1/gittest/');
+        $this->echo "types";
         $this->timeouts()->implicitWait(50000);
         $this->assertEquals('Home page',$this->title());
         $this->byXPath('html/body/div[1]/header/div[1]/div/ul/li[3]/a')->click();
