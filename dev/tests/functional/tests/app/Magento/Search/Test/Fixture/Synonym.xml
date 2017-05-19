@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/fixture.xsd">
+    <fixture name="synonym"
+             module="Magento_Search"
+             entity_type="search_synonyms"
+             type="flat"
+             collection="Magento\Search\Model\ResourceModel\Query\Collection"
+             repository_class="Magento\Search\Test\Repository\Synonym"
+             handler_interface="Magento\Search\Test\Handler\Synonym\SynonymInterface"
+             class="Magento\Search\Test\Fixture\Synonym">
+        <field name="group_id" is_required="1 "/>
+        <field name="synonyms" is_required="0" />
+        <field name="store_id" is_required="0" />
+        <field name="website_id" is_required="0" />
+    </fixture>
+</config>

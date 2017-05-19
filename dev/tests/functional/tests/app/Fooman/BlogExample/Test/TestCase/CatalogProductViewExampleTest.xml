@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../../vendor/magento/mtf/etc/variations.xsd">
+    <testCase name="Fooman\BlogExample\Test\TestCase\CatalogProductViewExampleTest"
+              summary="Test that the Example block is added" ticketId="401">
+        <variation name="ExampleBlockVariation1">
+            <data name="product" xsi:type="string">catalogProductSimple::product_10_dollar</data>
+            <constraint name="Fooman\BlogExample\Test\Constraint\AssertExampleBlockExists" />
+        </variation>
+    </testCase>
+</config>
